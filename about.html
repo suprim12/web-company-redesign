@@ -1,0 +1,20 @@
+<div data-page="header"></div>
+<!-- Header -->
+<div data-page="nav"></div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        let includes = $('[data-page]');
+        console.log(includes);
+        jQuery.each(includes, function () {
+            let file = 'views/' + $(this).data('page') + '.html';
+            $(this).load(file);
+        });
+    });
+</script>
+<div data-page="footer"></div>
+</body>
+
+</html>

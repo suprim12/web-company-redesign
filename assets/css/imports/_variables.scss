@@ -1,0 +1,51 @@
+// Varaibles
+
+// Fonts
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Varela_Round/VarelaRound-Regular.ttf);
+}
+
+// Colors
+$font:'Montserrat';
+$font2:'varela Round';
+$bodybg:#f6f6f6;
+// Colors Title
+$title:#102B7B;
+$text:#212529;
+// Btns & links
+$success:#2ECC71;
+$btnbg:#102B7B;
+// Top Bg
+$topbg:#313952;
+$topcolor:#cbd3dc;
+// Shadow
+$shadow: 0px 10px 35px 0px rgba(1, 68, 137, 0.1);
+//Grdient bg
+$grad1: linear-gradient(to right, #0fb9f7, #32e7e0);
+
+// CSS Root
+:root {
+    --theme-color: #fefefe;
+    --text: #212529;
+}
+
+
+
+// Functions
+@function set-text-color($themebg) {
+    @if(lightness($themebg) > 40) {
+        @return $text;
+    }
+
+    @else {
+        @return #fff;
+    }
+}

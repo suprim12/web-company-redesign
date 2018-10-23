@@ -1,0 +1,12 @@
+@mixin easeIn($ts) {
+    transition: all $ts ease-in;
+}
+
+@mixin shadow {
+    box-shadow: $shadow;
+}
+
+@mixin sectionPadding {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}

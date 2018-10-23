@@ -1,0 +1,28 @@
+/*=============================================
+ThemeName:Web Company
+Theme-URL: ...
+Version:1.0
+Author:Suprim Golay
+Author-URL:http://suprimgolay.com.np
+
+=            TABLE OF CONTENTS            =
+1.Varaibles
+2.Mixins
+=============================================*/
+// Varaibles
+@import './imports/variables';
+
+// Mixins
+@import './imports/mixin';
+
+// Global Styles
+@import './imports/global';
+
+// Theme Styles
+@import './imports/theme';
+
+// Pages Styles
+@import './imports/page_home';
+
+// Responsive
+@import './imports/responsive';
