@@ -1,0 +1,13 @@
+.dark-theme {
+    .dropdown-menu {
+        background-color: #333;
+
+        a.dropdown-item {
+            color: #fff;
+
+            &:hover {
+                background: #262626;
+            }
+        }
+    }
+}

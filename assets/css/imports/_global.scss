@@ -1,0 +1,248 @@
+// Root Varaibles
+body {
+    background: var(--theme-color);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body,
+html {
+    font-family: $font;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a,
+button {
+    text-decoration: none;
+    outline: none;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+// Buttons
+.btn-custom {
+    display: inline-block;
+    color: #fff;
+    @include easeIn(0.5s);
+
+    &.primary {
+        background-color: $btnbg;
+        border-color: $btnbg;
+
+        &:hover {
+            background-color: darken($btnbg, 3);
+            border-color: darken($btnbg, 3);
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    &.success {
+        background: $success;
+        border: none;
+
+        &:hover {
+            background-color: darken($success, 3);
+            cursor: pointer;
+        }
+    }
+
+    &.btn-custom-round {
+        color: #fff !important;
+        font-size: 0.875rem !important;
+        border-radius: 50px;
+        font-weight: 600;
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+        @include easeIn(0.2s);
+    }
+
+    &.btn-custom-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: 0.3rem;
+    }
+
+    &.btn-custom-sm {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.3rem;
+    }
+
+
+}
+
+p {
+    color: var(--text);
+    font-family: $font2;
+}
+
+// Meta
+.meta {
+    span {
+        font-weight: 400;
+
+        i {
+            margin-right: 0.5rem;
+            color: $success;
+        }
+    }
+}
+
+.social-icons {
+    a {
+        color: $topcolor;
+        padding: 0 0.2rem;
+        @include easeIn(0.5s);
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.padding {
+    padding: 4rem 0;
+}
+
+span.success {
+    color: $success;
+}
+
+// dropdown
+.dropdown-toggle {
+    @include easeIn(0.5s);
+}
+
+.dropdown-menu {
+    @include shadow;
+    border: none;
+}
+
+.custom-dropdown-menu {
+    @include shadow;
+    border: none;
+    min-width: auto;
+
+    a {
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+}
+
+// Fixed navbar
+
+
+.fixed-navbar {
+    .navbar-custom {
+        @include shadow;
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100%;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 9999;
+    }
+}
+
+.dark-theme {
+    &.fixed-navbar {
+        .navbar-custom {
+            background: #140a0a;
+        }
+    }
+}
+
+// back to top
+.backtotop {
+    position: fixed;
+    right: 2rem;
+    visibility: hidden;
+    bottom: 4rem;
+    z-index: 999;
+    transform: rotate(270deg);
+    background: $success;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff !important;
+    @include easeIn(0.5s);
+
+    &:hover {
+        color: #fff !important;
+    }
+
+    &.backtoptop-show {
+        visibility: visible;
+        right: 4rem;
+        box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.2);
+    }
+}

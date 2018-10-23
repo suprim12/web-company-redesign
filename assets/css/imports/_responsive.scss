@@ -1,0 +1,65 @@
+/*desktops - higher resolution*/
+@media (min-width: 1281px) {}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .text-sm-center {
+        text-align: center;
+    }
+
+
+    /*=============================================
+    =            hero-section            =
+    =============================================*/
+    .hero-section {
+        .hero-slider-item {
+            h1 {
+                font-size: 2rem;
+                font-weight: 600;
+                text-transform: capitalize;
+                color: var(--text);
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                color: var(--text);
+                margin: 0;
+                padding: 0;
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
+            }
+        }
+
+        .hero-btns {
+            margin-top: 1.2rem;
+            font-family: $font2;
+        }
+    }
+
+
+    .served-section-wrapp {
+        display: block;
+        overflow: hidden;
+    }
+
+}
