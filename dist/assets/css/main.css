@@ -465,7 +465,6 @@ span.success {
 .service-section {
   padding-top: 94px;
   padding-bottom: 50px;
-  background-color: #edf4fd;
 }
 
 .service-section ul.tab-links {
@@ -698,6 +697,54 @@ span.success {
 .call-section .call-section-bg .call-section-content p {
   opacity: 0.8;
   font-size: 500;
+}
+
+/*=============================================
+=            home-footer            =
+=============================================*/
+.home-footer {
+  background: #222222;
+}
+
+.home-footer .footer-widget h3 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.home-footer .footer-widget ul li {
+  padding: 0.5rem 0;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.home-footer .footer-widget ul li a {
+  font-size: 1rem;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.home-footer .footer-widget ul li:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.home-footer .footer-widget ul li:hover a {
+  opacity: 1;
+}
+
+.home-footer hr.break {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.home-footer p {
+  opacity: 0.5;
+  font-size: 0.875rem;
 }
 
 /*desktops - higher resolution*/

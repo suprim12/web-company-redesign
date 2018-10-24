@@ -23,9 +23,10 @@ if(localvalue){
 }
 
 // Stick Navbar
-let nav = document.querySelector('.navbar-custom');
-let navoffset = nav.offsetTop;
+
 function stickyNavbar(){
+  let nav = document.querySelector('.navbar-custom');
+  let navoffset = nav.offsetTop;
     if(window.scrollY > navoffset){
         document.body.classList.add('fixed-navbar');
         document.body.style.paddingTop = nav.offsetHeight + 'px';
@@ -37,6 +38,7 @@ function stickyNavbar(){
 
 // Back to top
 let goTopBtn = document.querySelector('.back_to_top');
+
 function trackScroll(){
   let scrolled = window.pageYOffset;
   let coords = document.documentElement.clientHeight;
@@ -48,7 +50,6 @@ function trackScroll(){
   }
 }
 function backToTop(){
-  console.log('clicked');
   if(window.pageYOffset > 0){
     window.scrollBy(0,-80);
     setTimeout(backToTop,0);

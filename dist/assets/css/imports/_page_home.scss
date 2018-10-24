@@ -100,7 +100,6 @@
 =            served-section            =
 =============================================*/
 .served-section {
-
     h3 {
         font-size: 1.5rem;
         color: var(--text);
@@ -168,7 +167,7 @@
 ============================================= */
 .service-section {
     @include sectionPadding();
-    background-color: #edf4fd;
+    // background-color: #edf4fd;
 
     ul.tab-links {
         padding: 0;
@@ -398,5 +397,55 @@
                 font-size: 500;
             }
         }
+    }
+}
+
+
+/*=============================================
+=            home-footer            =
+=============================================*/
+.home-footer {
+    background: #222222;
+
+    .footer-widget {
+        h3 {
+            color: #fff;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12rem;
+            font-weight: 600;
+            font-family: $font;
+        }
+
+        ul li {
+            padding: 0.5rem 0;
+            @include easeIn(0.5s);
+
+            a {
+                font-size: 1rem;
+                color: #fff;
+                opacity: 0.8;
+            }
+
+            &:hover {
+                transform: translateX(10px);
+            }
+
+            &:hover a {
+                opacity: 1;
+
+            }
+        }
+    }
+
+    hr.break {
+        background: #fff;
+        opacity: 0.5;
+    }
+
+    p {
+        opacity: 0.5;
+        font-size: 0.875rem;
     }
 }
