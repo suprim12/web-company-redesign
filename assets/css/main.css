@@ -502,14 +502,13 @@ span.success {
 }
 
 .service-section .tab-links {
-  margin: 0 0 80px;
-  width: 80%;
+  margin: 80px auto;
+  width: 100%;
   background-color: #fff;
   text-align: center;
   -webkit-box-shadow: 0px 10px 35px 0px rgba(1, 68, 137, 0.1);
           box-shadow: 0px 10px 35px 0px rgba(1, 68, 137, 0.1);
   position: relative;
-  margin-left: 10%;
   border-radius: 5px;
   z-index: 99;
 }
